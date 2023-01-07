@@ -1,0 +1,30 @@
+
+	<script>
+		window.onload = function() {
+			var d = new Date().getTime();
+			document.getElementById("tid").value = d;
+		};
+	</script>
+	<form method="post" name="customerData" action="ccavRequestHandler.php">
+		<input type="hidden" name="tid" id="tid" readonly />
+		<input type="hidden" name="merchant_id" value="149462"/>
+		<input type="hidden" name="order_id" value="123654789"/>
+		<input type="hidden" name="amount" value="1.00"/>
+		<input type="hidden" name="currency" value="INR"/>
+		<input type="hidden" name="redirect_url" value="http://localhost/IFrame_PHP_kit/ccavResponseHandler.php"/>
+ 		<input type="hidden" name="cancel_url" value="http://localhost/IFrame_PHP_kit/ccavResponseHandler.php"/>
+		<input type="hidden" name="language" value="EN"/>
+		<input type="hidden" name="billing_name" value="Charli"/>
+    	<input type="hidden" name="billing_address" value="Room no 1101, near Railway station Ambad"/>
+    	<input type="hidden" name="billing_city" value="Indore"/>
+    	<input type="hidden" name="billing_state" value="MP"/>
+    	<input type="hidden" name="billing_zip" value="425001"/>
+    	<input type="hidden" name="billing_country" value="India"/>
+    	<input type="hidden" name="billing_tel" value="9876543210"/>
+    	<input type="hidden" name="billing_email" value="test@test.com"/>
+    	<input type="hidden" name="delivery_name" value="Chaplin"/>
+    	<input type="hidden" name="delivery_address" value="room no.701 near bus stand"/>
+    	<input type="hidden" name="delivery_city" value="Hyderabad"/><input type="hidden" name="delivery_state" value="Andhra"/>
+    	<input type="hidden" name="delivery_zip" value="425001"/><input type="hidden" name="delivery_country" value="India"/><input type="hidden" name="delivery_tel" value="9876543210"/><input type="hidden" name="integration_type" value="iframe_normal"/>
+		<INPUT TYPE="submit" value="CheckOut">
+	</form>
