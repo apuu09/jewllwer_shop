@@ -1,2 +1,2 @@
 # jewllwer_shop
-this is the  jwellery shop website 
+the  jwellery shop website with admin panel 
